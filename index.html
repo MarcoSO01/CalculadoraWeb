@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="calculadora">
+        <h2>Calculadora</h2>
+        <input type="text" id="titulo" readonly>
+
+        <div>
+            <input id="botonSumar" type="button" value="+" onclick="darOperacion('+')">
+            <input id="botonRestar" type="button" value="-" onclick="darOperacion('-')">
+            <input id="botonMultiplicar" type="button" value="x" onclick="darOperacion('*')">
+            <input id="botonDividir" type="button" value="÷" onclick="darOperacion('/')">
+            <input type="button" value="C" onclick="reinicio()">
+        </div>
+
+        <div>
+            <input type="button" value="1" onclick="numNuevo('1')">
+            <input type="button" value="2" onclick="numNuevo('2')">
+            <input type="button" value="3" onclick="numNuevo('3')">
+            <input type="button" value="4" onclick="numNuevo('4')">
+            <input type="button" value="5" onclick="numNuevo('5')">
+            <input type="button" value="6" onclick="numNuevo('6')">
+            <input type="button" value="7" onclick="numNuevo('7')">
+            <input type="button" value="8" onclick="numNuevo('8')">
+            <input type="button" value="9" onclick="numNuevo('9')">
+            <input type="button" value="0" onclick="numNuevo('0')">
+            <input type="button" value="=" onclick="calcular()">
+        </div>
+    </div>
+    <script src="./JavaScript/main.js"></script>
+</body>
+
+</html>
